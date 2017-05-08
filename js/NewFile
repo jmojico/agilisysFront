@@ -1,0 +1,11 @@
+$(document).ready(function() {
+  $('.card').click(function(event){
+$($(this).find('a').attr('href')).find('div').css(
+  { "visibility": "visible",
+  "animation-duration": "1000ms",
+  "animation-delay": "100ms",
+  "animation-name": "fadeInLeft"   }); 
+  $('.card').hover(function(event){
+     $($(this).find('a').attr('href')).collapse('show');};
+  $('[data-toggle="tooltip"]').tooltip();})
+});
