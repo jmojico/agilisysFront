@@ -1,0 +1,19 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "launch",
+             /* "runtimeExecutable":"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe --remote-debugging-port=9222",*/
+            "name": "Play directo desde aca",
+            "file": "${workspaceRoot}/index.html",
+            "webRoot": "${workspaceRoot}"
+        },
+        
+         
+    ]
+}
+
+
