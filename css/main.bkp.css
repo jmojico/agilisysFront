@@ -37,12 +37,26 @@ h3 {
     border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
 }
 
-.card-header {
+.card-header{
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background:linear-gradient(90deg,rgba(80, 187, 255,0.5),rgb(80, 187, 255),rgba(80, 187, 255,0.5))
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    border-left: 8px solid #ff4900;
+   }
+.card-header a {
+  color: white;
 }
+
+div.card-header:hover {
+   border-left: 8px solid #027db3;
+  background: #ff4900; /* For browsers that do not support gradients */ /*Safari 5.1-6*/ /*Opera 11.1-12*/ /*Fx 3.6-15*/
+  /*
+  background: -webkit-linear-gradient(to left, rgba(0,0,0,1),30%, rgba(255, 73, 0,1));
+  background: -moz-linear-gradient(to left, rgba(0,0,0,1),30%, rgba(255, 73, 0,1));
+  background: -o-linear-gradient(to left, rgba(0,0,0,1),30%, rgba(255, 73, 0,1));
+  background: linear-gradient(to left, rgba(0,0,0,1),30%, rgba(255, 73, 0,1)); /*Standard*/ */
+
+}
+
 
 .card {
     position: relative;
@@ -55,19 +69,45 @@ h3 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    background:linear-gradient(90deg,rgba(80, 187, 255,0.5),rgb(80, 187, 255),rgba(80, 187, 255,0.5));
-    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
+    max-width:30%;
+    border-top: 1px solid white;
+
+    
+ }
+
+.card:hover {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: .25rem;
+    max-width: 100%;
+    width: 100%;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
 }
 
-.card-header:hover {
-  background: linear-gradient(90deg,rgba(80, 187, 255,0.5),rgb(80, 187, 255),rgba(80, 187, 255,0.5))
-}
-.card-header:hover:after {
-  background: linear-gradient(90deg,rgba(80, 187, 255,0.5),rgb(80, 187, 255),rgba(80, 187, 255,0.5))
+
+.card:past {
+  border-bottom: 0px;
 }
 
-
+ #accordion, div#accordion.container {
+    
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+ }
 .parallax {
   background-size: cover;
   background-repeat: no-repeat;
@@ -336,7 +376,6 @@ section {
 
 .row.count div:hover {
 color:  #ff4900;
-text-color:  #ff4900;
 }
 
 
@@ -368,6 +407,7 @@ text-color:  #ff4900;
 #about-us {
   background-image: url(../images/about-bg.jpg);
   padding: 30px 0;
+  bac
 }
 
 #about-us h2 {
@@ -664,11 +704,17 @@ background-image: url(../images/marketing-bg.jpg);
 
 }
 
-#features i, #webdesign i, #webdesign h3,  #infra i, #infra h3, #appsdev i, #appsdev h3, #branding i, #branding h3, #marketing i, #marketing h3 {
-  font-size: 30px;
-   margin-top: 15px;
-    margin-bottom: 7px;
+#webdesign h3,  #infra h3, #appsdev h3,  #branding h3,  #marketing h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 7px;
 }
+
+section .row.count div i{
+  font-size: 35px;
+}
+
+
 
 #webdesign h2, #infra h2, #appsdev h2,#branding h2,#marketing h2 {
 
@@ -1087,4 +1133,8 @@ ul.address {
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 14px rgba(102, 175, 233, .6);
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 14px rgba(102, 175, 233, .6);
+}
+
+.open>.dropdown-menu {
+  background-color: #ff4900;
 }

@@ -6,7 +6,8 @@ a,
 .single-table.featured .btn.btn-primary, 
 .contact-info ul li a:hover, 
 #footer .footer-bottom a  {
-  color: #ff4900;
+  color: #51504f;
+  text-decoration: blink;
 }
 
 .btn.btn-primary:hover,
@@ -15,10 +16,11 @@ a,
 }
 
 .card-header{
-background-color: #ff4900;
+background-color: #d8d8d8;
 }
 a:hover, a:focus {
-	color: white;
+	color: black;
+	/* font-weight: bold; */
 }
 
 .main-nav, 
