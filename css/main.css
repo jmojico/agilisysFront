@@ -71,7 +71,13 @@ h3 {
 }
 
 
+#accordion a {
+color:darkgrey;
+}
 
+#accordion a:hover {
+color:black;
+}
 .parallax {
   background-size: cover;
   background-repeat: no-repeat;
@@ -371,7 +377,7 @@ text-color:  #ff4900;
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/team.jpg);
   padding: 30px 0;
 }
 
