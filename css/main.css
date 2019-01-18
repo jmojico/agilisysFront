@@ -72,7 +72,9 @@ h3 {
 
 
 #accordion a {
-color:darkgrey;
+color:white;
+text-decoration: #666;
+font-weight: bold;
 }
 
 #accordion a:hover {
@@ -379,6 +381,7 @@ text-color:  #ff4900;
 #about-us {
   background-image: url(../images/team.jpg);
   padding: 30px 0;
+  margin-top: 5%;
 }
 
 #about-us h2 {

@@ -16,8 +16,9 @@ a,
 }
 
 .card-header{
-background-color: #d8d8d8;
-}
+/*background-color: gainsboro*/
+} 
+
 a:hover, a:focus {
 	color: black;
 	/* font-weight: bold; */
