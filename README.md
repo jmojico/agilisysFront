@@ -1,9 +1,2 @@
-# agilisysFront
-This is the project for my personal website
+# Startup Company Landing Site made with bootstrap.
 
-#TODOs
-crear icono con barra naranja y hacerlo miniatura
-crear logo grande y poner en front
-configurar form con mail
-subir fotos y editar equipo
-subir codeanywhere
